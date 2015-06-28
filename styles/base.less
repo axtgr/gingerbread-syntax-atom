@@ -72,6 +72,10 @@
   &.regexp {
     color: @purple;
 
+    * {
+      color: inherit;
+    }
+
     .source.ruby.embedded {
       color: @muted-red;
     }
@@ -131,6 +135,10 @@
 }
 
 .entity {
+  &.name.type {
+    color: @syntax-text-color;  
+  }
+
   &.name.function {
     color: @muted-red;
   }

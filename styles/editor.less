@@ -53,6 +53,11 @@ atom-text-editor::shadow {
   .selection .region {
     background-color: @syntax-selection-color !important;
   }
+
+  .bracket-matcher .region {
+    z-index: 1;
+    border: 1px solid fade(@muted-red, 60%);
+  }
 }
 
 atom-text-editor .search-results .marker .region,
