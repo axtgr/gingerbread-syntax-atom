@@ -1,7 +1,7 @@
 {
   "name": "gingerbread-syntax",
   "theme": "syntax",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A warm and sweet syntax theme for Atom.",
   "keywords": [
     "syntax",
