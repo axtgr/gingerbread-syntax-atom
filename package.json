@@ -1,0 +1,17 @@
+{
+  "name": "gingerbread-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "A warm and sweet syntax theme for Atom.",
+  "keywords": [
+    "syntax",
+    "theme",
+    "warm",
+    "dark"
+  ],
+  "repository": "https://github.com/alex-shnayder/gingerbread-syntax-atom",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
