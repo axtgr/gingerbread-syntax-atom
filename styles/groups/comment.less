@@ -1,0 +1,37 @@
+// Comments
+.comment {
+  color: @_comment;
+
+  // Line comments
+  &.line {
+
+    // Starts with //
+    &.double-slash {
+    }
+
+    // Starts with --
+    &.double-dash {
+    }
+
+    // Starts with #
+    &.number-sign {
+    }
+
+    // Starts with %
+    &.percentage {
+    }
+
+    // Other
+    &.character {
+    }
+  }
+
+  // Multi-line comments
+  // E.g.: /* … */ and <!-- … -->
+  &.block {
+
+    // Embedded documentation
+    &.documentation {
+    }
+  }
+}

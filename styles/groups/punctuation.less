@@ -1,0 +1,22 @@
+// Punctuation
+.punctuation {
+  color: @_punctuation;
+
+  // E.g.: ; at the end of a line
+  &.terminator {
+  }
+
+  &.definition {
+    &.keyword,
+    &.comment,
+    &.string,
+    &.variable,
+    &.array,
+    &.heading,
+    &.identity,
+    &.constant,
+    &.quasi {
+      color: inherit !important;
+    }
+  }
+}

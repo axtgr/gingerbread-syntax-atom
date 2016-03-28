@@ -1,0 +1,38 @@
+// Keywords that don't fall into the other groups
+.keyword {
+  color: @_keyword;
+
+  // Related to flow control
+  // E.g.: continue, while, return
+  &.control {
+    color: @_keyword;
+
+    // At-rules in CSS-like languages
+    // E.g.: @media
+    &.at-rule {
+      color: @_at-rule;
+    }
+
+    // Imports and exports
+    // E.g.: @import './base.less';
+    //       export default foo;
+    &.import,
+    &.module {
+      color: @_import;
+    }
+  }
+
+  // E.g.: +, &&, or, and
+  &.operator {
+    color: @_operator;
+  }
+
+  &.other {
+
+    // Unit of a constant
+    // E.g.: %, px
+    &.unit {
+      color: fadeout(@_constant, 35%);
+    }
+  }
+}

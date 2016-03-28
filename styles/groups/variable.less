@@ -1,0 +1,39 @@
+// Variables
+// Not all languages allow easy identification of these
+.variable {
+
+  // Object properties
+  // E.g.: $object->property, this.property
+  &.property {
+    color: @_variable-property;
+  }
+
+  // Other variables
+  &:not(.property) {
+    color: @_variable;
+
+    // Function argument
+    &.parameter,
+    .function > .parameters ~ &,
+    .argument > & {
+      color: @_argument;
+    }
+
+    // Reserved language variables
+    // E.g.: this, super, self
+    &.language {
+    }
+
+    // Interpolated variables
+    // and variables which are being assigned to other variables
+    // so that they are visually distinguishable
+    // E.g.: @foo: @bar;
+    &.interpolation,
+    & ~ .separator.key-value ~ & {
+      color: @_variable-secondary;
+    }
+
+    &.other {
+    }
+  }
+}

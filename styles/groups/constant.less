@@ -1,0 +1,26 @@
+// Constants
+.constant {
+  color: @_constant;
+
+  // E.g.: 42, 1.3f, 0x4AB1U...
+  &.numeric {
+  }
+
+  // E.g.: &lt;, \e, \031...
+  &.character {
+  }
+
+  // Escape sequences (they are also .character)
+  // E.g.: \e
+  &.escape {
+  }
+
+  // Constants (generally) provided by the language which are “special”
+  // E.g.: true, false, nil, YES, NO...
+  &.language {
+  }
+
+  // E.g.: colors in CSS
+  &.other {
+  }
+}

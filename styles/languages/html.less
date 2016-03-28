@@ -1,0 +1,17 @@
+.text.html,
+.text.xml {
+
+  // Doctype
+  .tag.sgml {
+    *,
+    .punctuation.definition {
+      color: fade(@_tag, 60%);
+      font-style: italic;
+    }
+  }
+
+  // Tag brackets
+  .punctuation.definition.tag {
+    color: @_tag-brackets;
+  }
+}

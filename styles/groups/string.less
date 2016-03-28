@@ -1,0 +1,40 @@
+// Strings
+.string:not(.function) {
+  color: @_string;
+
+  &.quoted {
+
+    // E.g.: 'foo'
+    &.single {
+    }
+
+    // E.g.: "foo"
+    &.double {
+    }
+
+    // E.g.: """Python"""
+    &.triple {
+    }
+
+    // E.g.: $'shell', %s{...}.
+    &.other {
+    }
+  }
+
+  // E.g.: here-docs, here-strings
+  &.unquoted {
+  }
+
+  // Strings which are "evaluated"
+  // E.g.: `date`, $(pwd)
+  &.interpolated {
+  }
+
+  // Regular expressions
+  // E.g.: /(\w+)/
+  &.regexp {
+  }
+
+  &.other {
+  }
+}

@@ -1,0 +1,62 @@
+// Markup
+.markup {
+  &.underline {
+    text-decoration: underline;
+
+    // Derived from markup.underline so that if there is no theme rule
+    // which specifically targets markup.underline.link
+    // then it will inherit the underline style
+    &.link {
+    }
+  }
+
+  &.bold {
+    font-weight: bold;
+  }
+
+  &.italic {
+    font-style: italic;
+  }
+
+  &.heading {
+    color: @_heading;
+  }
+
+  // List items
+  &.list {
+    color: @_property;
+
+    &.numbered {
+    }
+
+    &.unnumbered {
+    }
+  }
+
+  &.quote {
+    color: @_constant;
+  }
+
+  // Text which is verbatim
+  // E.g.: code listings
+  &.raw {
+    &.inline {
+      color: @_string;
+    }
+  }
+
+  &.inserted {
+    color: @_added;
+  }
+
+  &.changed {
+    color: @_modified;
+  }
+
+  &.deleted {
+    color: @_removed;
+  }
+
+  &.other {
+  }
+}

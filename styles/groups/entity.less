@@ -1,0 +1,48 @@
+// Entities
+
+// An entity refers to a larger part of the document,
+// for example a chapter, class, function, or tag.
+// We do not scope the entire entity as entity.* (we use meta.* for that).
+// But we do use entity.* for the “placeholders” in a larger entity,
+// e.g. if the entity is a chapter, we would use entity.name.section
+// for the chapter title.
+
+.entity {
+
+  // We are naming a larger entity.
+  &.name {
+
+    // Name of a function
+    &.function {
+      color: @_function;
+    }
+
+    // Name of a type declaration or class
+    &.type {
+      color: @_class;
+    }
+
+    // Name of a tag
+    &.tag {
+      color: @_tag;
+    }
+
+    // Name of a section/heading
+    &.section {
+      color: @_heading;
+    }
+  }
+
+  &.other {
+
+    // Super/base class name
+    &.inherited-class {
+      color: @_inherited-class;
+    }
+
+    // Name of an attribute (mainly in tags)
+    &.attribute-name {
+      color: @_attribute;
+    }
+  }
+}

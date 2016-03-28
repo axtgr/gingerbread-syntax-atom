@@ -1,0 +1,16 @@
+// Invalid
+.invalid {
+
+  // E.g.: & or < character in HTML (which is not part of an entity/tag)
+  &.illegal {
+    color:  @_error !important;
+    border-bottom: 1px solid;
+  }
+
+  // E.g.: using an API function which is deprecated
+  // or using styling with strict HTML
+  &.deprecated {
+    color:  @_warning !important;
+    border-bottom: 1px solid;
+  }
+}

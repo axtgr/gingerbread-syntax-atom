@@ -1,31 +1,31 @@
 atom-text-editor, :host {
-  background-color: @syntax-background-color !important;
-  color: @syntax-text-color;
+  background-color: @_background;
+  color: @_text;
 
   .wrap-guide {
-    background-color: @syntax-wrap-guide-color;
+    background-color: @_invisible;
   }
 
   .indent-guide {
-    color: @syntax-wrap-guide-color;
+    color: @_invisible;
   }
 
   .invisible-character {
-    color: @syntax-invisible-character-color;
+    color: @_invisible;
   }
 
   .gutter {
-    background-color: @syntax-gutter-background-color;
-    color: @syntax-gutter-text-color;
+    background-color: @_gutter-background;
+    color: @_gutter-text;
 
     .line-number {
       &.cursor-line {
-        background-color: @syntax-gutter-background-color-selected;
-        color: @syntax-gutter-text-color-selected;
+        background-color: @_gutter-background-selected;
+        color: @_gutter-text-selected;
       }
 
       &.cursor-line-no-selection {
-        color: @syntax-gutter-text-color-selected;
+        color: @_gutter-text-selected;
       }
     }
   }
@@ -33,45 +33,39 @@ atom-text-editor, :host {
   .gutter .line-number.folded,
   .gutter .line-number:after,
   .fold-marker:after {
-    color: @light-gray;
+    color: @_text;
   }
 
   .invisible {
-    color: @syntax-text-color;
+    color: @_invisible;
   }
 
   .cursor {
-    color: @syntax-cursor-color;
+    color: @_cursor;
   }
 
   .cursor-line {
-    background: @dark-gray;
+    background: @_selection-muted;
   }
 }
 
 atom-text-editor::shadow {
   .selection .region {
-    background-color: @syntax-selection-color !important;
+    background-color: @_selection;
   }
 
   .bracket-matcher .region {
-    z-index: 1;
-    border: 1px solid fade(@muted-red, 60%);
+    color: @_marker;
+    border: 1px solid;
   }
 }
 
-atom-text-editor .search-results .marker .region,
-:host .search-results .marker .region {
-  background-color: transparent;
-  border: 1px solid @syntax-result-marker-color;
+atom-text-editor .find-result .region,
+:host .find-result .region {
+  border: 1px solid @_marker !important;
 }
 
-atom-text-editor .search-results .marker.current-result .region,
-:host .search-results .marker.current-result .region {
-  border: 1px solid @syntax-result-marker-color-selected;
-}
-
-atom-text-editor[mini] .scroll-view,
-:host([mini]) .scroll-view {
-  padding-left: 1px;
+atom-text-editor .find-result .current-result .region,
+:host .find-result .current-result .region {
+  border: 1px solid @_marker;
 }

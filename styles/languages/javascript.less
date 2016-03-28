@@ -1,0 +1,23 @@
+.source.js {
+
+  // Object keys are recognized as strings,
+  // but it's better to color them as properties
+  .object.key > .string {
+    color: @_property;
+  }
+
+  // Import, export, module.exports
+  .support.module,
+  .support.module .keyword {
+    color: @_import;
+  }
+
+  .function.name:not(.mutator) {
+    color: @_property;
+  }
+
+  .operator.accessor ~ .function,
+  .object.key ~ .function > .name {
+    color: @_function;
+  }
+}

@@ -1,17 +1,95 @@
-// These colors are specific to the theme. Do not use in a package!
+// Variables specific to the theme. Do not use in a package!
 
-@very-light-gray: #d5d5d5;
-@light-gray: #969896;
-@gray: #373b41;
-@dark-gray: #282525;
-@very-dark-gray: #202020;
 
-@red: #e65c4e;
-@muted-red: #cf6a4c;
-@dull-red: #d78d76;
-@bright-red: #f04330;
-@salmon: #f26f6f;
-@beige: #e0c589;
-@light-beige: #fff4aa;
-@green: #87c26b;
-@purple: #c993bc;
+@_white: #fff;
+@_very-light-gray: #d5d5d5;
+@_light-gray: #969896;
+@_gray: #373b41;
+@_dark-gray: #282525;
+@_very-dark-gray: #212120;
+
+@_red: #e65c4e;
+@_muted-red: #d26144;
+@_dull-red: #d78d76;
+@_bright-red: #f04330;
+@_salmon: #f26f6f;
+@_brownish: #403535;
+@_yellow: #e2c961;
+@_golden: #d69d57;
+@_beige: #e0c386;
+@_light-beige: #fff4aa;
+@_green: #81c173;
+@_purple: #c993bc;
+
+
+// Editor background
+@_background: @_very-dark-gray;
+
+// Main text
+@_text: @_very-light-gray;
+
+// Comments
+@_comment: @_light-gray;
+
+// Selected text
+@_selection: @_brownish;
+
+// Current line
+@_selection-muted: fadeout(@_selection, 70%);
+
+// Cursors
+@_cursor: @_white;
+
+// Markers like find results and matching brackets
+@_marker: @_golden;
+
+// Guides and invisible characters
+@_invisible: fadeout(@_comment, 87%);
+
+// Snippets
+@_snippet: @_beige;
+
+// Gutter
+@_gutter-background: @_background;
+@_gutter-background-selected: @_selection-muted;
+@_gutter-text: @_light-gray;
+@_gutter-text-selected: @_light-gray;
+
+// Diffs
+@_added: @_green;
+@_modified: @_yellow;
+@_renamed: @_yellow;
+@_removed: @_bright-red;
+
+// Invalid stuff
+@_error: @_bright-red;
+@_warning: @_yellow;
+@_success: @_green;
+
+// Language entities
+@_punctuation: fadeout(@_text, 17%);
+@_string: @_green;
+@_constant: @_light-beige; // Numbers, colors, booleans, etc.
+@_variable: @_salmon;
+@_variable-secondary: lighten(@_variable, 6%); // Interpolated and being-assigned vars
+@_variable-property: @_text; // Object properties like bar in $foo->bar
+@_argument: @_red;
+@_property: @_beige;
+@_value: @_text;
+@_heading: @_muted-red; // Headings in markup
+@_class: @_text;
+@_inherited-class: @_text; // Super/base classes
+@_keyword: @_golden;
+@_import: @_muted-red;
+@_operator: @_beige;
+@_function: @_text; // Function declarations
+@_storage: @_keyword; // Keywords like var, function, and access modifiers
+@_tag: @_muted-red;
+@_tag-brackets: @_attribute;
+@_attribute: @_beige;
+@_at-rule: @_keyword;
+@_selector-id: @_bright-red;
+@_selector-class: @_red;
+@_selector-tag: @_muted-red;
+@_selector-pseudo: @_dull-red;
+@_selector-other: @_selector-tag; // E.g.: parent selector

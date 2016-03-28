@@ -1,0 +1,16 @@
+.source.json {
+	.dictionary {
+
+		// Keys are recognized as strings,
+		// but it's better to color them as properties
+		.string {
+			color: @_property;
+		}
+
+		// String values (distinguished from keys)
+		.value > .string,
+		.value > .string > * {
+			color: @_string;
+		}
+	}
+}
