@@ -2,8 +2,8 @@
 
 A warm and sweet syntax theme for Atom.
 
-![](./screenshots/javascript.png)
+![](https://raw.githubusercontent.com/alex-shnayder/gingerbread-syntax-atom/master/screenshots/javascript.png)
 
-![](./screenshots/html.png)
+![](https://raw.githubusercontent.com/alex-shnayder/gingerbread-syntax-atom/master/screenshots/html.png)
 
-![](./screenshots/css.png)
+![]((https://raw.githubusercontent.com/alex-shnayder/gingerbread-syntax-atom/master/screenshots/css.png)
