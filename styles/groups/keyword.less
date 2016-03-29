@@ -25,6 +25,11 @@
   // E.g.: +, &&, or, and
   &.operator {
     color: @_operator;
+
+    // The accessor dot is considered punctuation
+    &.accessor {
+      color: @_punctuation;
+    }
   }
 
   &.other {

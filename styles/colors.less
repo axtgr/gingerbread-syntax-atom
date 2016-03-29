@@ -19,7 +19,6 @@
 @_beige: #e0c386;
 @_light-beige: #fff4aa;
 @_green: #81c173;
-@_purple: #c993bc;
 
 
 // Editor background
@@ -69,6 +68,7 @@
 // Language entities
 @_punctuation: fadeout(@_text, 17%);
 @_string: @_green;
+@_regexp: spin(darken(@_string, 5%), 35);
 @_constant: @_light-beige; // Numbers, colors, booleans, etc.
 @_variable: @_salmon;
 @_variable-secondary: lighten(@_variable, 6%); // Interpolated and being-assigned vars
