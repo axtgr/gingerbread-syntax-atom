@@ -12,11 +12,14 @@
     color: @_import;
   }
 
+  // Object properties that contain functions
+  // should not be colored as function names
   .function.name:not(.mutator) {
     color: @_property;
   }
 
-  .operator.accessor ~ .function,
+  .function-call > .entity.function.name,
+  .storage.function ~ .entity.function.name,
   .object.key ~ .function > .name {
     color: @_function;
   }
